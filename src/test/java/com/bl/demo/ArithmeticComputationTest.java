@@ -4,16 +4,21 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ArithmeticComputationTest {
-    Arithmetic arithmetic = new Arithmetic();
+    ArithmeticComputation arithmeticComputation= new ArithmeticComputation();
     @Test
     public void givenTwoValue_WhenAddAndMultiply_ReturnAddMultiply() {
-        int addMultiplyResult = arithmetic.addMultiply(2, 2, 2);
+        int addMultiplyResult = arithmeticComputation.addMultiply(2, 2, 2);
         Assert.assertEquals(6, addMultiplyResult);
     }
 
     @Test
     public void givenTwoValue_WhenMultiplyAdd_ReturnMultiplyAdd() {
-        int multiplyAddResult = arithmetic.multiplyAdd(2, 4, 1);
+        int multiplyAddResult = arithmeticComputation.multiplyAdd(2, 4, 1);
         Assert.assertEquals(9, multiplyAddResult);
+    }
+    @Test
+    public void givenTwoValue_WhenDivideAdd_ReturnDivideAdd() {
+        int divideAddResult = arithmeticComputation.divideAdd(10, 5, 1);
+        Assert.assertEquals(3, divideAddResult);
     }
 }
