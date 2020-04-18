@@ -7,7 +7,6 @@ public class ArithmeticComputationTest {
     Arithmetic arithmetic = new Arithmetic();
     @Test
     public void givenTwoValue_WhenAddAndMultiply_ReturnAddMultiply() {
-
         int addMultiplyResult = arithmetic.addMultiply(2, 2, 2);
         Assert.assertEquals(6, addMultiplyResult);
     }
