@@ -11,4 +11,7 @@ public class ArithmeticComputation {
     public int divideAdd(int a, int b, int c) {
         return c + (a / b);
     }
+    public int modAdd(int a, int b, int c) {
+        return (a % b) + c;
+    }
 }
